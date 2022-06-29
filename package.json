@@ -9,7 +9,7 @@
         "start": "sirv public --no-clear",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "static-stories": "build-storybook -c .storybook -o .out",
+        "static-stories": "build-storybook -c .storybook -o .docs-build",
         "format": "prettier --check .",
         "format-fix": "prettier --write .",
         "prelint": "npm run format-fix",
