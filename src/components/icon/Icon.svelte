@@ -1,15 +1,15 @@
-<script lang="typescript">
-    import { ICONS, Icon } from '../../lib/icons'
+<script lang="ts">
+    import {ICONS, Icon} from '../../lib/icons';
 
-    export let icon: Icon = undefined
-    export let width: number | string = undefined
-    export let height: number | string = undefined
-    export let classes = ''
-    export let boxed = false
-    export let boxClasses = 'undefined'
-    export let boxStyles = ''
+    export let icon: Icon = undefined;
+    export let width: number | string = undefined;
+    export let height: number | string = undefined;
+    export let classes = '';
+    export let boxed = false;
+    export let boxClasses = 'undefined';
+    export let boxStyles = '';
 
-    $: selected = ICONS[icon]
+    $: selected = ICONS[icon];
 </script>
 
 {#if selected}
