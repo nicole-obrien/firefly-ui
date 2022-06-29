@@ -1,7 +1,7 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
     import Icon from './Icon.svelte';
-    import { Icon as IconName } from '../../lib/icons'
+    import {Icon as IconName} from '../../lib/icons';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
@@ -27,7 +27,7 @@
 <Story
     name="ArrowLeft"
     args={{
-        icon: IconName.ArrowLeft,
+        icon: IconName.ArrowLeft
     }}
 />
 

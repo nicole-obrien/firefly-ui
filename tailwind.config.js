@@ -10,7 +10,7 @@ module.exports = {
         // purgeLayersByDefault: true,
     },
     purge: {
-        content: ['./src/**/*.svelte'],
+        content: ['./src/**/*.svelte', './src/**/*.stories.svelte'],
         options: {
             // Needed to prevent purgecss from removing classes declared with string concatenation
             safelist: [

@@ -1,5 +1,5 @@
-<script lang="typescript">
-    import {Icon, Text} from '../';
+<script lang="ts">
+    import {Icon, Text} from '..';
     import {Icon as IconName} from '../../lib/icons';
 
     export let primary = false;
