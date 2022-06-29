@@ -362,5 +362,6 @@ module.exports = {
                 modifySelectors(({className}) => `.scheme-dark .${e(`dark:focus${separator}${className}`)}:focus`);
             });
         })
-    ]
+    ],
+    darkMode: 'class'
 };

@@ -9,6 +9,7 @@ module.exports = {
         '@storybook/addon-svelte-csf',
         '@storybook/addon-storysource',
         '@storybook/addon-a11y',
+        'storybook-tailwind-dark-mode',
         {
             name: '@storybook/addon-postcss',
             options: {

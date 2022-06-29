@@ -1,5 +1,9 @@
 import '../src/tailwind.css';
 
+export const globalTypes = {
+    darkMode: false
+};
+
 export const parameters = {
     actions: {argTypesRegex: '^on[A-Z].*'},
     controls: {
