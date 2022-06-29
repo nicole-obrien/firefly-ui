@@ -9,35 +9,31 @@ module.exports = {
         // removeDeprecatedGapUtilities: true,
         // purgeLayersByDefault: true,
     },
-    purge: {
-        content: ['./src/**/*.svelte', './src/**/*.stories.svelte'],
-        options: {
-            // Needed to prevent purgecss from removing classes declared with string concatenation
-            safelist: [
-                // `from-${color}` (gradients)
-                /^from-/,
-                // `to-${color}` (gradients)
-                /^to-/,
-                // `bg-${color}`
-                /^bg-/,
-                /^hover:bg-/,
-                /^dark:bg-/,
-                // `text-${color}`
-                /^text-/,
-                /^hover:text-/,
-                /^dark:text-/,
-                /^font-/,
-                /^hover:font-/,
-                /^dark:font-/,
-                /^grid-cols-/,
-                // `p-${size}`
-                /^p-/,
-                'scheme-dark',
-                'fill-current',
-                'stroke-current'
-            ]
-        }
-    },
+    content: ['./src/**/*.svelte', './src/**/*.stories.svelte'],
+    safelist: [
+        {
+            pattern: /^bg-/,
+            variants: ['hover', 'dark', 'focus']
+        },
+        {
+            pattern: /^text-/,
+            variants: ['hover', 'dark', 'focus']
+        },
+        {
+            pattern: /^font-/,
+            variants: ['hover', 'dark', 'focus']
+        },
+        // `from-${color}` (gradients)
+        /^from-/,
+        // `to-${color}` (gradients)
+        /^to-/,
+        /^grid-cols-/,
+        // `p-${size}`
+        /^p-/,
+        'scheme-dark',
+        'fill-current',
+        'stroke-current'
+    ],
     theme: {
         colors: {
             blue: {
@@ -289,14 +285,6 @@ module.exports = {
             'fira-mono': ['"Fira Mono"', 'monospace'],
             inter: ['Inter']
         }
-    },
-    variants: {
-        fontWeight: ['hover', 'focus', 'group-hover'],
-        textColor: ['dark', 'responsive', 'hover', 'dark-hover', 'focus', 'dark-focus', 'group-hover'],
-        backgroundColor: ['dark', 'responsive', 'hover', 'dark-hover', 'focus', 'dark-focus', 'group-hover'],
-        backgroundOpacity: ['dark'],
-        opacity: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus', 'disabled'],
-        cursor: ['responsive', 'disabled']
     },
     plugins: [
         // Add individual border colors
