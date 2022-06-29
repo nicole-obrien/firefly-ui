@@ -1,0 +1,17 @@
+{
+    "extends": "@tsconfig/svelte/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "importsNotUsedAsValues": "remove",
+        "lib": ["DOM", "ESNext"],
+        "moduleResolution": "node",
+        "outDir": "out",
+        "paths": {
+            "@components/*": ["./src/components/*"],
+            "@lib/*": ["./src/lib/*"],
+            "@stories/*": ["./src/stories/*"]
+        }
+    },
+    "include": ["./src"],
+    "exclude": ["**/node_modules", "**/tests"]
+}
