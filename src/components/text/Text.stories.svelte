@@ -22,7 +22,9 @@
 
 <!-- More on component templates: https://storybook.js.org/docs/svelte/writing-stories/introduction#using-args -->
 <Template let:args>
-    <Text {...args}>{args.text}</Text>
+    <div class="flex items-center justify-center">
+        <Text {...args}>{args.text}</Text>
+    </div>
 </Template>
 
 <Story

@@ -9,7 +9,9 @@
 
 <!-- More on component templates: https://storybook.js.org/docs/svelte/writing-stories/introduction#using-args -->
 <Template let:args>
-    <KeyValueBox {...args} />
+    <div class="flex items-center justify-center">
+        <KeyValueBox {...args} />
+    </div>
 </Template>
 
 <Story
